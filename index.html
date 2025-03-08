@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>測試頁面</title>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <h1>GitHub Pages 測試頁面</h1>
-  <p>如果您看到這個頁面，說明 GitHub Pages 設置正確。</p>
-</body>
-</html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/matrixdnas/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TwinMatrix DNAs</title>
+    <script type="module" crossorigin src="/matrixdnas/assets/index-CakGgTJs.js"></script>
+    <link rel="stylesheet" crossorigin href="/matrixdnas/assets/index-CsRqzrVE.css">
+    <!-- 處理 GitHub Pages 的路由 -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
